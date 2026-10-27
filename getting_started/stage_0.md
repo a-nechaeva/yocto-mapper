@@ -1,5 +1,5 @@
-
-# Установка хостовых пакетов
+# Начало работы. Базовая сборка двух образов
+## Установка хостовых пакетов
 ```bash
 sudo apt update
 sudo apt install -y build-essential chrpath cpio debianutils diffstat file \
@@ -16,7 +16,7 @@ sudo locale-gen en_US.UTF-8
 mkdir -p ~/yocto && cd ~/yocto
 ```
 
-# Клонирование Poky
+## Клонирование Poky
 Необходимо выбрать стабильную ветку, возьмем Scarthgap (5.0 LTS), она стабильна и имеет предсказуемое поведение с SBOM/CVE.
 
 ```bash
@@ -29,9 +29,10 @@ source oe-init-build-env build-a
 ```
 Вторая команда активирует окружение и ее необходимо применять каждый раз перед запуском конкретной сборки, так как `source oe-init-build-env` изменяет переменные окружения для текущей сессии терминала, также нельзя активировать две среды сборки одновременно в одном терминале.
 
-# Настройка конфигов
+## Настройка конфигов
 В каждой директории сборки редактируем файл `conf/local.conf`:
 * Для варианта A (без HTTP/2):
+  
   ```bash
   # ------
   MACHINE ?= "qemux86-64"
@@ -44,6 +45,7 @@ source oe-init-build-env build-a
   INHERIT += "rm_work"
   ```
 * Для варианта B:
+  
   ```bash
   # ------
   MACHINE ?= "qemux86-64"
@@ -59,7 +61,7 @@ source oe-init-build-env build-a
   Строка `PACKAGECONFIG:append:pn-curl` означает: для пакета (`pn-`) curl применить настройку сборки (`PACKAGECONFIG`), а именно -- включить функцию `nghttp2`. Yocto сам увидит эту настройку, поймет, что для нее нужна библиотека `nghttp2`, скачает и соберет ее, а затем скомпилирует curl с флагом `--with-nghttp2`.
 
 
-# Сборка
+## Сборка
 В директории необходимой конфигурации сборки (a или b) запускаем
 ```bash
 bitbake core-image-minimal
@@ -81,6 +83,15 @@ bitbake core-image-minimal
 Команда для проверки, что в сборку попало то, что нужно:
 ```bash
 bitbake -e curl | grep "^PACKAGECONFIG="
+```
+
+Для сборки A вывод такой
+```bash
+PACKAGECONFIG="ipv6 aws basic-auth bearer-auth digest-auth negotiate-auth libidn openssl proxy random threaded-resolver verbose zlib"
+```
+для B:
+```bash
+PACKAGECONFIG="ipv6 aws basic-auth bearer-auth digest-auth negotiate-auth libidn openssl proxy random threaded-resolver verbose zlib nghttp2"
 ```
 
 
