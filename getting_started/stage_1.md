@@ -153,3 +153,8 @@ EXTRA_IMAGE_FEATURES += "package-management"
 ```
 и пересобрать образы.
 
+И...
+<img width="1390" height="543" alt="s_1_trivy_pkgm" src="https://github.com/user-attachments/assets/2e51a329-250f-48e9-a102-19ab8dd4c4fb" />
+
+
+
