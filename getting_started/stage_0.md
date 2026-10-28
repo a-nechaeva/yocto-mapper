@@ -22,6 +22,11 @@ mkdir -p ~/yocto && cd ~/yocto
 ```bash
 git clone https://git.yoctoproject.org/poky.git -b scarthgap --depth=1
 ```
+*ДЛЯ ДАЛЬНЕЙШЕГО ОБНОВЛЕНИЯ БУДЕМ ИСПОЛЬЗОВАТЬ СЛЕДУЮЩУЮ КОМАНДУ:*
+```bash
+git pull --depth=1 origin scarthgap
+```
+
 Инициализируем директорию для сборки, сначала для варианта А (аналогично инициализируется вторая конфигурация сборки)
 ```bash
 cd ~/yocto/poky
