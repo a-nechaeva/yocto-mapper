@@ -95,7 +95,51 @@ cd poky/meta/recipes-support/curl/
 
 или другой способ найти упоминания патча: `grep "CVE-2026-11856" curl_8.7.1.bb`.
 
-Видим, что нужного патча пока нет:( Значит, уязвимость действительно есть.
+Видим, что нужного патча пока нет:( Значит, уязвимость действительно есть (*МОЖНО ВРУЧНУЮ ЕЕ ЗАПАТЧИТЬ*).
 
+### Проверка через SBOM и сторонние сканнеры
+* SBOM-архив, который мы распакуем и скормим Trivy или Grype:
 
+```bash
+build-a/tmp/deploy/images/qemux86-64/core-image-minimal-qemux86-64.rootfs.spdx.tar.zst
+```
+* Распаковка SBOM:
+  ```bash
+  mkdir sbom-a
+  tar -xf core-image-minimal-qemux86-64.rootfs.spdx.tar.zst -C sbom-a
+  ls sbom-a
+  ```
+Нужный для сканирования файл называется: `core-image-minimal-qemux86-64.rootfs.spdx.json`.
+
+* Установим Trivy:
+  ```bash
+  # 1. Добавляем репозиторий Trivy
+  sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+  wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+  echo "deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" |
+  sudo tee /etc/apt/sources.list.d/trivy.list
+
+  # 2. Устанавливаем Trivy
+  sudo apt-get update
+  sudo apt-get install trivy -y
+  ```
+   
+* Установим Grype:
+  
+  ```bash
+  # Устанавливаем Grype с помощью официального скрипта
+  curl -sSfL https://get.anchore.io/grype | sudo sh -s -- -b /usr/local/bin
+  ```
+
+* Запуск сканирования с помощью Trivy:
+
+   <img width="1827" height="371" alt="s_1_trivy_res" src="https://github.com/user-attachments/assets/95c53f83-0875-4d07-b527-b1a01fcaddb6" />
+
+Видим, что Trivy не выявил уязвимости.
+
+* Запуск сканирования с помощью Grype:
+
+  <img width="1837" height="177" alt="s_1_grype_res" src="https://github.com/user-attachments/assets/cb2ad823-2b47-4809-8922-03e576f9aa99" />
+
+   
 
