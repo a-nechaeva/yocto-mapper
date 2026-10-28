@@ -73,6 +73,19 @@ jq '.package[] | select(.name=="nghttp2")' tmp/log/cve/cve-summary.json
 
 Видим, что все ок -- cve для неустановленного `nghttp2` нет.
 
-5. ff
-6. 
+5. Рассмотрим одну из уязвимостей в сборке A: `CVE-2026-11856` -- уязвимость в libcurl, связанная с утечкой состояния HTTP-аутентификации Digest при междоменных (cross-origin) запросах. Починили в версии libcurl `8.21.0`.
+6. Посмотрим, какая версия libcurl в нашей сборке. При сборке образа автоматически создается файл `.manifest`, который содержит список всех установленных пакетов с их архитектурой и версией. В моем случае он выглядит так:
+```bash
+tmp/deploy/images/qemux86-64/core-image-minimal-qemux86-64.rootfs.manifest
+```
+Посмотрим, какая версия libcurl у нас используется:
+
+```bash
+anya@DESKTOP-RU7GHPB:~/yocto/poky/build-a/tmp/deploy/images/qemux86-64$ grep -iE "curl|nghttp2" core-image-minimal-qemux86-64.rootfs.manifest
+curl core2_64 8.7.1
+libcurl4 core2_64 8.7.1
+```
+Очевидно, что версия старше исправленной, поэтому с точки зрения сканнера уязвимость найдена правильно.
+   
+8. 
 
