@@ -141,5 +141,7 @@ build-a/tmp/deploy/images/qemux86-64/core-image-minimal-qemux86-64.rootfs.spdx.t
 
   <img width="1837" height="177" alt="s_1_grype_res" src="https://github.com/user-attachments/assets/cb2ad823-2b47-4809-8922-03e576f9aa99" />
 
+Эти сканнеры ничего не видят, потому что мы использовали класс Yocto `create-spdx`, который генерирует пакеты с нестандартными названиями, например, `libcurl4` и тд.
+
    
 
