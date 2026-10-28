@@ -59,6 +59,11 @@ jq -r '.package[] | select(.name=="curl") | .issue[] | select(.status=="Unpatche
 
 Видим, что сканнер нашел уязвимости.
 
+*Посмотреть все связанные cve с равзными статусами:*
+```bash
+jq '.package[] | select(.name=="curl")' tmp/log/cve/cve-summary.json
+```
+
 4. Также проверим, не видит ли он в сборке A уязвимости `nghttp2` (которого по-идее в ней быть не должно):
 ```bash
 jq '.package[] | select(.name=="nghttp2")' tmp/log/cve/cve-summary.json
