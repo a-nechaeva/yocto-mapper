@@ -156,7 +156,63 @@ EXTRA_IMAGE_FEATURES += "package-management"
 И...
 <img width="1390" height="543" alt="s_1_trivy_pkgm" src="https://github.com/user-attachments/assets/2e51a329-250f-48e9-a102-19ab8dd4c4fb" />
 
-### TODO: написать про cyclone и про grype
+### Генерация BOM с помощью CycloneDX
 
+Существует несколько репозиториев `meta-cyclonedx`. Наиболее актуальным и поддерживаемым для вашей ветки scarthgap является репозиторий от iris-GmbH. Он специально адаптирован для генерации SBOM в формате CycloneDX с исправленной генерацией CPE и поддержкой purl, что напрямую относится к вашей задаче по анализу CVE.
 
+* В директории `~/yocto/poky` выполним:
+
+```bash
+git clone -b scarthgap https://github.com/iris-GmbH/meta-cyclonedx.git
+```
+* Активируем окружение сборки:
+  ```bash
+  source oe-init-build-env build-a
+  ```
+
+* Добавим слой (в директории `poky`:
+  
+  ```bash
+  bitbake-layers add-layer meta-cyclonedx
+  ```
+
+* Чтобы SBOM сгенерировался в формате CycloneDX, добавим в `local.conf`:
+  ```bash
+   INHERIT += "cyclonedx-export"
+  ```
+
+* Запускаем вновь сборку. После нее в директории
+  ```bash
+  ~/yocto/poky/build-a/tmp/deploy/cyclonedx-export
+  ```
+  появятся два файла: `bom.json` и `vex.json`
+
+* Запустим сканирование с помощью Trivy:
+  
+  <img width="1885" height="161" alt="s_1_trivy_cyclone" src="https://github.com/user-attachments/assets/ccd3a2b0-a864-4976-bff8-010d5caa038a" />
+
+  Опять неуспех:(
+
+* Запустим сканирование с помощью Grype:
+
+  <img width="1916" height="369" alt="s_1_grype_cyc" src="https://github.com/user-attachments/assets/e03184d4-1d87-4269-9459-0de4cb128995" />
+
+  А здесь успех!
+
+  Упакуем вывод в отдельный файл
+  ```bash
+   grype sbom:bom.json -o json > grype-report-a.json
+  ```
+  И посмотрим, какие cve, связанные с curl найдены:
+  ```bash
+  jq -r '.matches[] | select(.artifact.name | test("curl"; "i")) | "\(.artifact.name) \(.artifact.version) - \(.vulnerability.id) [\(.vulnerability.severity)]"' grype-report-a.json
+  ```
+
+  <img width="1883" height="757" alt="s_1_grype_cyc_res" src="https://github.com/user-attachments/assets/c715f770-46e5-4b8d-89c5-7b732816b0b8" />
+
+  Но видим, что cve выводятся просто на основе сопоставления версии библиотеки и существующих возможных уязвимостей (TODO: проверить, мб, какие-то из них запатчены отдельно и есть ложное срабатывание).
+
+  
+
+ 
 
