@@ -1,0 +1,2279 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:354a3192-a607-4c57-8a16-6c431374a8fe",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-29T00:02:05.820990+00:00",
+    "tools": [
+      {
+        "name": "yocto"
+      }
+    ],
+    "component": {
+      "type": "firmware",
+      "name": "core-image-minimal",
+      "version": "5.0.21-20261028235847",
+      "bom-ref": "6764ca03-a04b-4c29-a033-e6357f3da053",
+      "externalReferences": [
+        {
+          "url": "https://git.yoctoproject.org/poky.git@b6ae714a1d1bfae8384654a13da15996cac64712",
+          "type": "vcs",
+          "comment": "Yocto metadata layer meta"
+        },
+        {
+          "url": "https://git.yoctoproject.org/poky.git@b6ae714a1d1bfae8384654a13da15996cac64712",
+          "type": "vcs",
+          "comment": "Yocto metadata layer meta-poky"
+        },
+        {
+          "url": "https://git.yoctoproject.org/poky.git@b6ae714a1d1bfae8384654a13da15996cac64712",
+          "type": "vcs",
+          "comment": "Yocto metadata layer meta-yocto-bsp"
+        },
+        {
+          "url": "https://github.com/iris-GmbH/meta-cyclonedx.git@0db6bbb738aefb53bd870854b2da94d9221b1c12",
+          "type": "vcs",
+          "comment": "Yocto metadata layer meta-cyclonedx"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "base-files",
+      "version": "3.0.14",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:base-files:3.0.14:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/base-files@3.0.14",
+      "bom-ref": "8cec98b2-1dd2-42b3-8aaf-00ad35b1167b",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "base-passwd",
+      "version": "3.6.8",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:base-passwd:3.6.8:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/base-passwd@3.6.8",
+      "bom-ref": "e2525695-379e-4f89-8958-7258c9713304",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "bash",
+      "version": "5.2.21",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:bash:5.2.21:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/bash@5.2.21",
+      "bom-ref": "4d3f8d9d-d49b-4201-b0fd-bb96958365f9",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "busybox",
+      "version": "1.36.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:busybox:1.36.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/busybox@1.36.1",
+      "bom-ref": "cd53d9ac-e79f-475c-9bcc-34d5006a0ba2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "name": "bzip2-1.0.4"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "type": "library",
+      "cpe": "cpe:2.3:*:bzip:bzip2:1.0.8:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/bzip/bzip2@1.0.8",
+      "bom-ref": "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+      "group": "bzip",
+      "licenses": [
+        {
+          "license": {
+            "id": "bzip2-1.0.6"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MS-PL"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20260816",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:ca-certificates:20260816:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/ca-certificates@20260816",
+      "bom-ref": "34d0e89e-7c51-41a0-9689-2f133ef44813",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "cpython",
+      "version": "3.12.15",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:cpython:3.12.15:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/cpython@3.12.15",
+      "bom-ref": "8401e704-1ca5-4171-b4f6-115568a769e9",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "curl",
+      "version": "8.7.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:daniel_stenberg:curl:8.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/daniel_stenberg/curl@8.7.1",
+      "bom-ref": "27c2c567-fc2e-4de9-b997-e2cb28237e58",
+      "group": "daniel_stenberg",
+      "licenses": [
+        {
+          "license": {
+            "id": "curl"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "curl",
+      "version": "8.7.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:curl:curl:8.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/curl/curl@8.7.1",
+      "bom-ref": "63437222-efef-4294-ab04-a0d3ec668200",
+      "group": "curl",
+      "licenses": [
+        {
+          "license": {
+            "id": "curl"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "curl",
+      "version": "8.7.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:haxx:curl:8.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/haxx/curl@8.7.1",
+      "bom-ref": "e52f9607-07de-4158-b32b-636e9e92bbb9",
+      "group": "haxx",
+      "licenses": [
+        {
+          "license": {
+            "id": "curl"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "debugedit",
+      "version": "5.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:debugedit:5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/debugedit@5.0",
+      "bom-ref": "8db94759-4c7e-4442-8e74-9c24dd9a2fe2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "dnf",
+      "version": "4.19.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:dnf:4.19.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/dnf@4.19.0",
+      "bom-ref": "4a6fa9ec-5da2-4ec9-8c75-29fc24995ee5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "elfutils",
+      "version": "0.191",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:elfutils:0.191:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/elfutils@0.191",
+      "bom-ref": "152b9ae4-b6e1-4a04-a7f5-da76614cb4d1",
+      "licenses": [
+        {
+          "expression": "(GPL-2.0-or-later OR LGPL-3.0-or-later) AND GPL-3.0-or-later"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "eudev",
+      "version": "3.2.14",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:eudev:3.2.14:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/eudev@3.2.14",
+      "bom-ref": "55a989e5-b7a3-492d-8af2-b094b8b1d48f",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "expat",
+      "version": "2.8.3",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:expat:2.8.3:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/expat@2.8.3",
+      "bom-ref": "a93acede-9ddf-4e83-baab-d51a947efc1c",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "file",
+      "version": "5.45",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:file:5.45:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/file@5.45",
+      "bom-ref": "6f0114c3-c9ae-429b-8db8-87a43620268b",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "gcc",
+      "version": "13.5.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:gcc:13.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/gcc@13.5.0",
+      "bom-ref": "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-with-GCC-exception"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "glib",
+      "version": "2.78.6",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:glib:2.78.6:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/glib@2.78.6",
+      "bom-ref": "fe8850a8-3a6e-451e-8513-079512bb5727",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "PD"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "glibc",
+      "version": "2.39",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:glibc:2.39:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/glibc@2.39",
+      "bom-ref": "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "gmp",
+      "version": "6.3.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:gmp:6.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/gmp@6.3.0",
+      "bom-ref": "88d2ea49-0e2d-454c-aa3d-9379f1c237b9",
+      "licenses": [
+        {
+          "expression": "GPL-2.0-or-later OR LGPL-3.0-or-later"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "gnupg",
+      "version": "2.4.9",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:gnupg:2.4.9:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/gnupg@2.4.9",
+      "bom-ref": "871afcf4-be8f-49d3-842f-edd03564fc7e",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-3.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "gnutls",
+      "version": "3.8.4",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:gnutls:3.8.4:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/gnutls@3.8.4",
+      "bom-ref": "fb52f09a-9e48-4dd9-9213-4d712b879d17",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "gpgme",
+      "version": "1.23.2",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:gpgme:1.23.2:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/gpgme@1.23.2",
+      "bom-ref": "f23eafb8-7573-4cb2-9768-329f45a82b4b",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "init-ifupdown",
+      "version": "1.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:init-ifupdown:1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/init-ifupdown@1.0",
+      "bom-ref": "1e4f4468-07a0-473e-a003-106ca8eb5768",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "init-system-helpers",
+      "version": "1.66",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:init-system-helpers:1.66:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/init-system-helpers@1.66",
+      "bom-ref": "2e34b537-544a-458e-8e1f-8564a3a28f72",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "initscripts",
+      "version": "1.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:initscripts:1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/initscripts@1.0",
+      "bom-ref": "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "json-c",
+      "version": "0.17-20230812",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:json-c:0.17-20230812:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/json-c@0.17-20230812",
+      "bom-ref": "7f339dfb-3e27-4cd6-9659-b559c548a5a5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "kmod",
+      "version": "31",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:kmod:31:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/kmod@31",
+      "bom-ref": "bddb9a36-d6b9-427b-af76-418df9ee6012",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libassuan",
+      "version": "2.5.6",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libassuan:2.5.6:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libassuan@2.5.6",
+      "bom-ref": "01c862e1-ca5f-4051-8433-cb3db1a99aac",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libcap",
+      "version": "2.69",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libcap:2.69:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libcap@2.69",
+      "bom-ref": "c9d5c9b9-eacd-4c87-9f38-6d8f7309bb24",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause OR GPL-2.0-only"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libcomps",
+      "version": "0.1.20",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libcomps:0.1.20:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libcomps@0.1.20",
+      "bom-ref": "040769bd-edfd-4432-ae71-49c52ad2c79c",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libcurl",
+      "version": "8.7.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:libcurl:libcurl:8.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libcurl/libcurl@8.7.1",
+      "bom-ref": "94c79471-04c7-4851-9086-a076974f26cb",
+      "group": "libcurl",
+      "licenses": [
+        {
+          "license": {
+            "id": "curl"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libcurl",
+      "version": "8.7.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:haxx:libcurl:8.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/haxx/libcurl@8.7.1",
+      "bom-ref": "6648a1a5-babc-4b23-948b-450666f4ad03",
+      "group": "haxx",
+      "licenses": [
+        {
+          "license": {
+            "id": "curl"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libcurl",
+      "version": "8.7.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:curl:libcurl:8.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/curl/libcurl@8.7.1",
+      "bom-ref": "0ce494fc-3489-47f8-8534-70db1c07ff21",
+      "group": "curl",
+      "licenses": [
+        {
+          "license": {
+            "id": "curl"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libdnf",
+      "version": "0.73.2",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libdnf:0.73.2:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libdnf@0.73.2",
+      "bom-ref": "b78cedf7-cf65-4458-8730-9e77be4f2bc0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libedit",
+      "version": "20230828-3.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libedit:20230828-3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libedit@20230828-3.1",
+      "bom-ref": "1c545dd9-bbaa-4dc9-8265-2ed6d14cbb05",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libexpat",
+      "version": "2.8.3",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libexpat:2.8.3:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libexpat@2.8.3",
+      "bom-ref": "6b239d3e-5021-44ab-bed9-e30534108857",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libffi",
+      "version": "3.4.6",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libffi:3.4.6:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libffi@3.4.6",
+      "bom-ref": "8db3adec-1f20-4a37-b5c4-2c58e1f22669",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libgcrypt",
+      "version": "1.10.4",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libgcrypt:1.10.4:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libgcrypt@1.10.4",
+      "bom-ref": "54097ccb-414c-419f-bc1f-f583492a1ada",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libgpg-error",
+      "version": "1.48",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libgpg-error:1.48:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libgpg-error@1.48",
+      "bom-ref": "0855c578-da17-49ff-90a0-b2a71283a60a",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libidn2",
+      "version": "2.3.7",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libidn2:2.3.7:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libidn2@2.3.7",
+      "bom-ref": "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+      "licenses": [
+        {
+          "expression": "(GPL-2.0-or-later OR LGPL-3.0-only) AND GPL-3.0-or-later AND Unicode-DFS-2016"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libksba",
+      "version": "1.6.6",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libksba:1.6.6:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libksba@1.6.6",
+      "bom-ref": "b59e703b-efd3-4d32-968a-8458405b9747",
+      "licenses": [
+        {
+          "expression": "GPL-3.0-or-later AND (GPL-2.0-or-later OR LGPL-3.0-or-later)"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libmodulemd",
+      "version": "2.15.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libmodulemd:2.15.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libmodulemd@2.15.0",
+      "bom-ref": "8c4d8755-ca4b-4d28-adaa-5c2b989f364d",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "librepo",
+      "version": "1.17.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:librepo:1.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/librepo@1.17.0",
+      "bom-ref": "7b587f27-62ea-4233-9f47-23ba778456bf",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libsolv",
+      "version": "0.7.28",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libsolv:0.7.28:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libsolv@0.7.28",
+      "bom-ref": "7853d87d-5dfe-41cd-b93a-3871037fdc92",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libtasn1",
+      "version": "4.20.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libtasn1:4.20.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libtasn1@4.20.0",
+      "bom-ref": "ac63bd90-ecd1-4ed6-a42b-64a3dc74bd5c",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libunistring",
+      "version": "1.2",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libunistring:1.2:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libunistring@1.2",
+      "bom-ref": "c640f33b-670f-4d40-be35-130c40f9b618",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0-or-later OR GPL-2.0-or-later"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libxcrypt",
+      "version": "4.4.36",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libxcrypt:4.4.36:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libxcrypt@4.4.36",
+      "bom-ref": "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libxml2",
+      "version": "2.12.10",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libxml2:2.12.10:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libxml2@2.12.10",
+      "bom-ref": "05d8d9c7-aefd-4060-bc4b-d0863041bff0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "libyaml",
+      "version": "0.2.5",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:libyaml:0.2.5:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/libyaml@0.2.5",
+      "bom-ref": "e86e1c30-f5ee-40b1-96bd-b942eed81002",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "linux_kernel",
+      "version": "6.6.151",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:linux_kernel:6.6.151:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/linux_kernel@6.6.151",
+      "bom-ref": "32a972a0-87b0-466d-a659-574c048a4b45",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "lzlib",
+      "version": "1.14",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:lzlib:1.14:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/lzlib@1.14",
+      "bom-ref": "4b2a51bb-b561-4a16-81c6-9c904ea838ff",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "modutils-initscripts",
+      "version": "1.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:modutils-initscripts:1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/modutils-initscripts@1.0",
+      "bom-ref": "438421f8-1cd1-446c-adfe-04b02e205368",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "ncurses",
+      "version": "6.4",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:ncurses:6.4:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/ncurses@6.4",
+      "bom-ref": "82886491-e7f3-40e8-aaa8-67533e5f1638",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "netbase",
+      "version": "6.4",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:netbase:6.4:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/netbase@6.4",
+      "bom-ref": "323150c2-fb79-4787-b1c3-fd0d7c054ffb",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "nettle",
+      "version": "3.9.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:nettle:3.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/nettle@3.9.1",
+      "bom-ref": "c1915084-365e-4f1c-ac20-1a18de21ff17",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0-or-later OR GPL-2.0-or-later"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "npth",
+      "version": "1.6",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:npth:1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/npth@1.6",
+      "bom-ref": "8b8fb2e1-2c77-4d50-9f01-10296e50a062",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "openssl",
+      "version": "3.5.9",
+      "type": "library",
+      "cpe": "cpe:2.3:*:openssl:openssl:3.5.9:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/openssl/openssl@3.5.9",
+      "bom-ref": "562c6262-aa24-41f1-8b06-e126601ab4c1",
+      "group": "openssl",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "opkg-utils",
+      "version": "0.6.3",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:opkg-utils:0.6.3:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/opkg-utils@0.6.3",
+      "bom-ref": "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "pcre2",
+      "version": "10.43",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:pcre2:10.43:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/pcre2@10.43",
+      "bom-ref": "14c6fa36-4e20-4c66-b150-2d317db7859a",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "perl",
+      "version": "5.38.4",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:perl:5.38.4:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/perl@5.38.4",
+      "bom-ref": "bcb3f624-2b14-4c83-bbc7-3ac52618621d",
+      "licenses": [
+        {
+          "expression": "Artistic-1.0 OR GPL-1.0-or-later"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "pinentry",
+      "version": "1.2.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:pinentry:1.2.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/pinentry@1.2.1",
+      "bom-ref": "eecb3918-65d9-4282-a3c0-a322c0d0b990",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "popt",
+      "version": "1.19",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:popt:1.19:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/popt@1.19",
+      "bom-ref": "b7e41bff-7124-4cf0-815a-4780176e4676",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "python",
+      "version": "3.12.15",
+      "type": "library",
+      "cpe": "cpe:2.3:*:python:python:3.12.15:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/python/python@3.12.15",
+      "bom-ref": "8c878479-41aa-46df-8011-da88618b39ef",
+      "group": "python",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "python",
+      "version": "3.12.15",
+      "type": "library",
+      "cpe": "cpe:2.3:*:python_software_foundation:python:3.12.15:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/python_software_foundation/python@3.12.15",
+      "bom-ref": "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f",
+      "group": "python_software_foundation",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "readline",
+      "version": "8.2",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:readline:8.2:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/readline@8.2",
+      "bom-ref": "a6269faf-22f5-48c1-b96b-72a5af784641",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "rpm",
+      "version": "4.19.1.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:rpm:4.19.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/rpm@4.19.1.1",
+      "bom-ref": "188d94d8-91bb-481d-ab76-a6dad011ccea",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "s390-tools",
+      "version": "2.31.0",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:s390-tools:2.31.0:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/s390-tools@2.31.0",
+      "bom-ref": "1fe3efa0-82d4-408d-95c3-1cb72189ba13",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "shared-mime-info",
+      "version": "2.4",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:shared-mime-info:2.4:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/shared-mime-info@2.4",
+      "bom-ref": "8872efb0-c807-44d7-a1e6-bb593f85c9a5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "sqlite",
+      "version": "3.45.3",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:sqlite:3.45.3:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/sqlite@3.45.3",
+      "bom-ref": "3cf87417-d335-44a8-9026-9f6335e873af",
+      "licenses": [
+        {
+          "license": {
+            "name": "PD"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "sysvinit",
+      "version": "3.04",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:sysvinit:3.04:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/sysvinit@3.04",
+      "bom-ref": "63fc68db-1712-48fa-a550-90431b2e181f",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "sysvinit-inittab",
+      "version": "2.88dsf",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:sysvinit-inittab:2.88dsf:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/sysvinit-inittab@2.88dsf",
+      "bom-ref": "2517019b-a557-416b-82c3-6441af00648e",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "update-rc.d",
+      "version": "0.8",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:update-rc.d:0.8:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/update-rc.d@0.8",
+      "bom-ref": "4488ff75-79e5-4f28-8a4c-d0263552f4bb",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "util-linux",
+      "version": "2.39.3",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:util-linux:2.39.3:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/util-linux@2.39.3",
+      "bom-ref": "295f3fd0-6774-4b51-b05f-ab53ed0728db",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-1.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-4-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "util-linux-libuuid",
+      "version": "2.39.3",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:util-linux-libuuid:2.39.3:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/util-linux-libuuid@2.39.3",
+      "bom-ref": "1570ac45-3224-4073-b10e-883e37b3bebf",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "v86d",
+      "version": "0.1.10",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:v86d:0.1.10:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/v86d@0.1.10",
+      "bom-ref": "2f118d40-903b-4db7-b3af-82ee2799f586",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "xz",
+      "version": "5.4.7",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:xz:5.4.7:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/xz@5.4.7",
+      "bom-ref": "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0-with-autoconf-exception"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "PD"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:zlib:zlib:1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/zlib/zlib@1.3.1",
+      "bom-ref": "fe084bec-61bc-4df9-b018-441f2fbacffd",
+      "group": "zlib",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "type": "library",
+      "cpe": "cpe:2.3:*:gnu:zlib:1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/gnu/zlib@1.3.1",
+      "bom-ref": "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+      "group": "gnu",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "name": "zstandard",
+      "version": "1.5.5",
+      "type": "library",
+      "cpe": "cpe:2.3:*:*:zstandard:1.5.5:*:*:*:*:*:*:*",
+      "purl": "pkg:generic/zstandard@1.5.5",
+      "bom-ref": "1feeb5f0-6de9-4a65-9990-990a985cd732",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause OR GPL-2.0-only"
+        }
+      ],
+      "scope": "required"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "6764ca03-a04b-4c29-a033-e6357f3da053",
+      "dependsOn": [
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+        "0ce494fc-3489-47f8-8534-70db1c07ff21",
+        "188d94d8-91bb-481d-ab76-a6dad011ccea",
+        "27c2c567-fc2e-4de9-b997-e2cb28237e58",
+        "2f118d40-903b-4db7-b3af-82ee2799f586",
+        "323150c2-fb79-4787-b1c3-fd0d7c054ffb",
+        "438421f8-1cd1-446c-adfe-04b02e205368",
+        "4a6fa9ec-5da2-4ec9-8c75-29fc24995ee5",
+        "63437222-efef-4294-ab04-a0d3ec668200",
+        "63fc68db-1712-48fa-a550-90431b2e181f",
+        "6648a1a5-babc-4b23-948b-450666f4ad03",
+        "8cec98b2-1dd2-42b3-8aaf-00ad35b1167b",
+        "94c79471-04c7-4851-9086-a076974f26cb",
+        "cd53d9ac-e79f-475c-9bcc-34d5006a0ba2",
+        "e2525695-379e-4f89-8958-7258c9713304",
+        "e52f9607-07de-4158-b32b-636e9e92bbb9"
+      ]
+    },
+    {
+      "ref": "e2525695-379e-4f89-8958-7258c9713304",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "4d3f8d9d-d49b-4201-b0fd-bb96958365f9",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "8cec98b2-1dd2-42b3-8aaf-00ad35b1167b"
+      ]
+    },
+    {
+      "ref": "cd53d9ac-e79f-475c-9bcc-34d5006a0ba2",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4488ff75-79e5-4f28-8a4c-d0263552f4bb",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf"
+      ]
+    },
+    {
+      "ref": "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "34d0e89e-7c51-41a0-9689-2f133ef44813",
+      "dependsOn": [
+        "562c6262-aa24-41f1-8b06-e126601ab4c1"
+      ]
+    },
+    {
+      "ref": "94c79471-04c7-4851-9086-a076974f26cb",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "6648a1a5-babc-4b23-948b-450666f4ad03",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "27c2c567-fc2e-4de9-b997-e2cb28237e58",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "0ce494fc-3489-47f8-8534-70db1c07ff21",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "63437222-efef-4294-ab04-a0d3ec668200",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "e52f9607-07de-4158-b32b-636e9e92bbb9",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "8db94759-4c7e-4442-8e74-9c24dd9a2fe2",
+      "dependsOn": [
+        "4d3f8d9d-d49b-4201-b0fd-bb96958365f9",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "152b9ae4-b6e1-4a04-a7f5-da76614cb4d1",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "4a6fa9ec-5da2-4ec9-8c75-29fc24995ee5",
+      "dependsOn": [
+        "040769bd-edfd-4432-ae71-49c52ad2c79c",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f",
+        "b78cedf7-cf65-4458-8730-9e77be4f2bc0",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "7b587f27-62ea-4233-9f47-23ba778456bf",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "871afcf4-be8f-49d3-842f-edd03564fc7e",
+        "188d94d8-91bb-481d-ab76-a6dad011ccea"
+      ]
+    },
+    {
+      "ref": "152b9ae4-b6e1-4a04-a7f5-da76614cb4d1",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "94c79471-04c7-4851-9086-a076974f26cb",
+        "6648a1a5-babc-4b23-948b-450666f4ad03",
+        "27c2c567-fc2e-4de9-b997-e2cb28237e58",
+        "0ce494fc-3489-47f8-8534-70db1c07ff21",
+        "63437222-efef-4294-ab04-a0d3ec668200",
+        "e52f9607-07de-4158-b32b-636e9e92bbb9",
+        "3cf87417-d335-44a8-9026-9f6335e873af"
+      ]
+    },
+    {
+      "ref": "55a989e5-b7a3-492d-8af2-b094b8b1d48f",
+      "dependsOn": [
+        "295f3fd0-6774-4b51-b05f-ab53ed0728db",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4488ff75-79e5-4f28-8a4c-d0263552f4bb",
+        "bddb9a36-d6b9-427b-af76-418df9ee6012"
+      ]
+    },
+    {
+      "ref": "6b239d3e-5021-44ab-bed9-e30534108857",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "a93acede-9ddf-4e83-baab-d51a947efc1c",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "6f0114c3-c9ae-429b-8db8-87a43620268b",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "4b2a51bb-b561-4a16-81c6-9c904ea838ff",
+        "1feeb5f0-6de9-4a65-9990-990a985cd732",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd"
+      ]
+    },
+    {
+      "ref": "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+      "dependsOn": [
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "fe8850a8-3a6e-451e-8513-079512bb5727",
+      "dependsOn": [
+        "295f3fd0-6774-4b51-b05f-ab53ed0728db",
+        "8db3adec-1f20-4a37-b5c4-2c58e1f22669",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "14c6fa36-4e20-4c66-b150-2d317db7859a",
+        "8872efb0-c807-44d7-a1e6-bb593f85c9a5"
+      ]
+    },
+    {
+      "ref": "88d2ea49-0e2d-454c-aa3d-9379f1c237b9",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "871afcf4-be8f-49d3-842f-edd03564fc7e",
+      "dependsOn": [
+        "b59e703b-efd3-4d32-968a-8458405b9747",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fb52f09a-9e48-4dd9-9213-4d712b879d17",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "8b8fb2e1-2c77-4d50-9f01-10296e50a062",
+        "01c862e1-ca5f-4051-8433-cb3db1a99aac",
+        "a6269faf-22f5-48c1-b96b-72a5af784641",
+        "54097ccb-414c-419f-bc1f-f583492a1ada",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+        "0855c578-da17-49ff-90a0-b2a71283a60a",
+        "eecb3918-65d9-4282-a3c0-a322c0d0b990"
+      ]
+    },
+    {
+      "ref": "fb52f09a-9e48-4dd9-9213-4d712b879d17",
+      "dependsOn": [
+        "88d2ea49-0e2d-454c-aa3d-9379f1c237b9",
+        "c640f33b-670f-4d40-be35-130c40f9b618",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "ac63bd90-ecd1-4ed6-a42b-64a3dc74bd5c",
+        "c1915084-365e-4f1c-ac20-1a18de21ff17",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a"
+      ]
+    },
+    {
+      "ref": "f23eafb8-7573-4cb2-9768-329f45a82b4b",
+      "dependsOn": [
+        "0855c578-da17-49ff-90a0-b2a71283a60a",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "01c862e1-ca5f-4051-8433-cb3db1a99aac",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "1e4f4468-07a0-473e-a003-106ca8eb5768",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+        "323150c2-fb79-4787-b1c3-fd0d7c054ffb",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4488ff75-79e5-4f28-8a4c-d0263552f4bb"
+      ]
+    },
+    {
+      "ref": "2e34b537-544a-458e-8e1f-8564a3a28f72",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+      "dependsOn": [
+        "2e34b537-544a-458e-8e1f-8564a3a28f72"
+      ]
+    },
+    {
+      "ref": "7f339dfb-3e27-4cd6-9659-b559c548a5a5",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "bddb9a36-d6b9-427b-af76-418df9ee6012",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "01c862e1-ca5f-4051-8433-cb3db1a99aac",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0855c578-da17-49ff-90a0-b2a71283a60a",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "c9d5c9b9-eacd-4c87-9f38-6d8f7309bb24",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "040769bd-edfd-4432-ae71-49c52ad2c79c",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "05d8d9c7-aefd-4060-bc4b-d0863041bff0",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f",
+        "6b239d3e-5021-44ab-bed9-e30534108857",
+        "a93acede-9ddf-4e83-baab-d51a947efc1c"
+      ]
+    },
+    {
+      "ref": "b78cedf7-cf65-4458-8730-9e77be4f2bc0",
+      "dependsOn": [
+        "295f3fd0-6774-4b51-b05f-ab53ed0728db",
+        "7853d87d-5dfe-41cd-b93a-3871037fdc92",
+        "fe8850a8-3a6e-451e-8513-079512bb5727",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f",
+        "7b587f27-62ea-4233-9f47-23ba778456bf",
+        "188d94d8-91bb-481d-ab76-a6dad011ccea",
+        "8c4d8755-ca4b-4d28-adaa-5c2b989f364d",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "7f339dfb-3e27-4cd6-9659-b559c548a5a5",
+        "3cf87417-d335-44a8-9026-9f6335e873af"
+      ]
+    },
+    {
+      "ref": "1c545dd9-bbaa-4dc9-8265-2ed6d14cbb05",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "8db3adec-1f20-4a37-b5c4-2c58e1f22669",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "54097ccb-414c-419f-bc1f-f583492a1ada",
+      "dependsOn": [
+        "c9d5c9b9-eacd-4c87-9f38-6d8f7309bb24",
+        "0855c578-da17-49ff-90a0-b2a71283a60a",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "0855c578-da17-49ff-90a0-b2a71283a60a",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "4f9c3a36-81c7-4004-8c1b-16cd90e97f6a",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "c640f33b-670f-4d40-be35-130c40f9b618",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "b59e703b-efd3-4d32-968a-8458405b9747",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0855c578-da17-49ff-90a0-b2a71283a60a",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "8c4d8755-ca4b-4d28-adaa-5c2b989f364d",
+      "dependsOn": [
+        "fe8850a8-3a6e-451e-8513-079512bb5727",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "e86e1c30-f5ee-40b1-96bd-b942eed81002",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "14c6fa36-4e20-4c66-b150-2d317db7859a",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd"
+      ]
+    },
+    {
+      "ref": "7b587f27-62ea-4233-9f47-23ba778456bf",
+      "dependsOn": [
+        "fe8850a8-3a6e-451e-8513-079512bb5727",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "f23eafb8-7573-4cb2-9768-329f45a82b4b",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "05d8d9c7-aefd-4060-bc4b-d0863041bff0",
+        "94c79471-04c7-4851-9086-a076974f26cb",
+        "6648a1a5-babc-4b23-948b-450666f4ad03",
+        "27c2c567-fc2e-4de9-b997-e2cb28237e58",
+        "0ce494fc-3489-47f8-8534-70db1c07ff21",
+        "63437222-efef-4294-ab04-a0d3ec668200",
+        "e52f9607-07de-4158-b32b-636e9e92bbb9",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f"
+      ]
+    },
+    {
+      "ref": "7853d87d-5dfe-41cd-b93a-3871037fdc92",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "188d94d8-91bb-481d-ab76-a6dad011ccea",
+        "1feeb5f0-6de9-4a65-9990-990a985cd732",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "6b239d3e-5021-44ab-bed9-e30534108857",
+        "a93acede-9ddf-4e83-baab-d51a947efc1c"
+      ]
+    },
+    {
+      "ref": "ac63bd90-ecd1-4ed6-a42b-64a3dc74bd5c",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "c640f33b-670f-4d40-be35-130c40f9b618",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "05d8d9c7-aefd-4060-bc4b-d0863041bff0",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f"
+      ]
+    },
+    {
+      "ref": "e86e1c30-f5ee-40b1-96bd-b942eed81002",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "4b2a51bb-b561-4a16-81c6-9c904ea838ff",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "438421f8-1cd1-446c-adfe-04b02e205368",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "04c84984-1fbb-41c0-a9e1-e9e68224c4d1",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "4488ff75-79e5-4f28-8a4c-d0263552f4bb"
+      ]
+    },
+    {
+      "ref": "82886491-e7f3-40e8-aaa8-67533e5f1638",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "c1915084-365e-4f1c-ac20-1a18de21ff17",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "88d2ea49-0e2d-454c-aa3d-9379f1c237b9",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "8b8fb2e1-2c77-4d50-9f01-10296e50a062",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "562c6262-aa24-41f1-8b06-e126601ab4c1",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+      "dependsOn": [
+        "4d3f8d9d-d49b-4201-b0fd-bb96958365f9",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f"
+      ]
+    },
+    {
+      "ref": "bcb3f624-2b14-4c83-bbc7-3ac52618621d",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf"
+      ]
+    },
+    {
+      "ref": "eecb3918-65d9-4282-a3c0-a322c0d0b990",
+      "dependsOn": [
+        "0855c578-da17-49ff-90a0-b2a71283a60a",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "01c862e1-ca5f-4051-8433-cb3db1a99aac",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "b7e41bff-7124-4cf0-815a-4780176e4676",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "8401e704-1ca5-4171-b4f6-115568a769e9",
+      "dependsOn": [
+        "1570ac45-3224-4073-b10e-883e37b3bebf",
+        "1c545dd9-bbaa-4dc9-8265-2ed6d14cbb05",
+        "8db3adec-1f20-4a37-b5c4-2c58e1f22669",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "3cf87417-d335-44a8-9026-9f6335e873af",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+        "6b239d3e-5021-44ab-bed9-e30534108857",
+        "a93acede-9ddf-4e83-baab-d51a947efc1c",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "8c878479-41aa-46df-8011-da88618b39ef",
+      "dependsOn": [
+        "1570ac45-3224-4073-b10e-883e37b3bebf",
+        "1c545dd9-bbaa-4dc9-8265-2ed6d14cbb05",
+        "8db3adec-1f20-4a37-b5c4-2c58e1f22669",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "3cf87417-d335-44a8-9026-9f6335e873af",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+        "6b239d3e-5021-44ab-bed9-e30534108857",
+        "a93acede-9ddf-4e83-baab-d51a947efc1c",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f",
+      "dependsOn": [
+        "1570ac45-3224-4073-b10e-883e37b3bebf",
+        "1c545dd9-bbaa-4dc9-8265-2ed6d14cbb05",
+        "8db3adec-1f20-4a37-b5c4-2c58e1f22669",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "562c6262-aa24-41f1-8b06-e126601ab4c1",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "3cf87417-d335-44a8-9026-9f6335e873af",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+        "6b239d3e-5021-44ab-bed9-e30534108857",
+        "a93acede-9ddf-4e83-baab-d51a947efc1c",
+        "34d0e89e-7c51-41a0-9689-2f133ef44813"
+      ]
+    },
+    {
+      "ref": "a6269faf-22f5-48c1-b96b-72a5af784641",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "188d94d8-91bb-481d-ab76-a6dad011ccea",
+      "dependsOn": [
+        "3cf87417-d335-44a8-9026-9f6335e873af",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "6f0114c3-c9ae-429b-8db8-87a43620268b",
+        "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+        "152b9ae4-b6e1-4a04-a7f5-da76614cb4d1",
+        "54097ccb-414c-419f-bc1f-f583492a1ada",
+        "1feeb5f0-6de9-4a65-9990-990a985cd732",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "8401e704-1ca5-4171-b4f6-115568a769e9",
+        "8c878479-41aa-46df-8011-da88618b39ef",
+        "3eccfa81-e52b-4cb4-96c6-ae40056ffd4f",
+        "32d3862a-dadd-4258-b19c-4eeb6186d2cd",
+        "b7e41bff-7124-4cf0-815a-4780176e4676",
+        "4d3f8d9d-d49b-4201-b0fd-bb96958365f9",
+        "8db94759-4c7e-4442-8e74-9c24dd9a2fe2",
+        "bcb3f624-2b14-4c83-bbc7-3ac52618621d",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a"
+      ]
+    },
+    {
+      "ref": "8872efb0-c807-44d7-a1e6-bb593f85c9a5",
+      "dependsOn": [
+        "fe8850a8-3a6e-451e-8513-079512bb5727",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "05d8d9c7-aefd-4060-bc4b-d0863041bff0",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "3cf87417-d335-44a8-9026-9f6335e873af",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "63fc68db-1712-48fa-a550-90431b2e181f",
+      "dependsOn": [
+        "e2525695-379e-4f89-8958-7258c9713304",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "2517019b-a557-416b-82c3-6441af00648e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf",
+        "04c84984-1fbb-41c0-a9e1-e9e68224c4d1"
+      ]
+    },
+    {
+      "ref": "2517019b-a557-416b-82c3-6441af00648e",
+      "dependsOn": [
+        "1fe3efa0-82d4-408d-95c3-1cb72189ba13"
+      ]
+    },
+    {
+      "ref": "1fe3efa0-82d4-408d-95c3-1cb72189ba13",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "295f3fd0-6774-4b51-b05f-ab53ed0728db",
+      "dependsOn": [
+        "1570ac45-3224-4073-b10e-883e37b3bebf",
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "fe084bec-61bc-4df9-b018-441f2fbacffd",
+        "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "82886491-e7f3-40e8-aaa8-67533e5f1638",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "9bd51cf5-7e2b-4e6a-ab56-6f34b859eadf"
+      ]
+    },
+    {
+      "ref": "1570ac45-3224-4073-b10e-883e37b3bebf",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "2f118d40-903b-4db7-b3af-82ee2799f586",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f",
+        "32a972a0-87b0-466d-a659-574c048a4b45"
+      ]
+    },
+    {
+      "ref": "293c97c7-f16b-4d6b-9e3c-1bbe6ebc10b3",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "0341cb13-0d85-4f4f-9e2e-cdc4c61af447",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "fe084bec-61bc-4df9-b018-441f2fbacffd",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "e1ec35bb-cef1-476d-beb2-a1e84c948e9a",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    },
+    {
+      "ref": "1feeb5f0-6de9-4a65-9990-990a985cd732",
+      "dependsOn": [
+        "4fa5f3f2-25e8-45d4-9fbf-8b03b8a03b0e",
+        "bdeb4871-f322-4548-b4ca-08f68ceac13f"
+      ]
+    }
+  ]
+}
